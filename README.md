@@ -1,8 +1,10 @@
 -- База данных
 database = news_website
+
+//
 CREATE DATABASE news_website;
-
-
+//
+use news_website;
 
 -- Создание таблицы news
 CREATE TABLE news (
