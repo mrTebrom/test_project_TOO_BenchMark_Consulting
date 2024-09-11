@@ -1,5 +1,6 @@
 -- База данных
 database = news_website
+CREATE DATABASE news_website;
 
 
 
