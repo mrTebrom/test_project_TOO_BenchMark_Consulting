@@ -1,10 +1,8 @@
--- База данных
-database = news_website
-
-//
+-- Создание базы данных
 CREATE DATABASE news_website;
-//
-use news_website;
+
+-- Выбор базы данных
+USE news_website;
 
 -- Создание таблицы news
 CREATE TABLE news (
@@ -13,6 +11,8 @@ CREATE TABLE news (
     image VARCHAR(255),
     content TEXT,
     author VARCHAR(255),
+    cardTitle VARCHAR(255),
+    cardDescription TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     views INT DEFAULT 0,
