@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+    align-content: center;
+}
+header nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li{
+    font-size: 16px;
+    list-style: none;
+}
+header nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    margin: 0 5px;
+}
+header nav ul li a::after{
+    content: '';
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    transform: scale(0);
+}
+header nav ul li a:hover::after{
+    transform: scale(1);
+    transition: .5s;
+}
+
+header nav ul li a.active::after{
+    transform: scale(1);
+}

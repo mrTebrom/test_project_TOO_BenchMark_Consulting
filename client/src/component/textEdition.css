@@ -1,0 +1,45 @@
+.editor-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.toolbar select {
+  padding: 5px;
+}
+
+.toolbar button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+.toolbar button.is-active {
+  background-color: #007bff;
+  color: white;
+}
+
+.editor-container .ProseMirror {
+  min-height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
